@@ -3,7 +3,12 @@
   "textures": {
     "layer0": "minecraft:item/popped_chorus_fruit"
   },
-  "overrides" : [
-    { "predicate": { "custom_model_data": 1 }, "model": "minecraft:custom/desk" }
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "pressure:item/block/furniture/desk"
+    }
   ]
 }
