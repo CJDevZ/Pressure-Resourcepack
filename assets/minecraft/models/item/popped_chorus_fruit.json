@@ -10,11 +10,23 @@
       },
       "model": "pressure:item/block/furniture/desk"
     },
-	{
+	  {
       "predicate": {
         "custom_model_data": 2
       },
       "model": "pressure:item/block/furniture/shelf"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "pressure:item/block/furniture/2_shelves"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "pressure:item/block/deco/barrel"
     }
   ]
 }
