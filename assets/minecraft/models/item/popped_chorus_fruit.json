@@ -32,7 +32,13 @@
       "predicate": {
         "custom_model_data": 5
       },
-      "model": "pressure:item/block/furniture/bank"
+      "model": "pressure:item/block/furniture/bench"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 6
+      },
+      "model": "pressure:item/block/deco/palette"
     }
   ]
 }
