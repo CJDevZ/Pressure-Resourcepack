@@ -45,6 +45,12 @@
         "custom_model_data": 7
       },
       "model": "pressure:item/block/furniture/drawer_table"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 8
+      },
+      "model": "pressure:item/block/furniture/locker"
     }
   ]
 }
