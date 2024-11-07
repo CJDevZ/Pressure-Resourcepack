@@ -51,6 +51,12 @@
         "custom_model_data": 8
       },
       "model": "pressure:item/block/furniture/locker"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 9
+      },
+      "model": "pressure:item/block/deco/electrical_box"
     }
   ]
 }
