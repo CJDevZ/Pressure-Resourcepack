@@ -157,21 +157,6 @@
 			}
 		},
 		{
-			"name": "warning",
-			"from": [0, -3, 0],
-			"to": [2, -1, 2],
-			"rotation": {"angle": 0, "axis": "y", "origin": [0, -3, 0]},
-			"color": 1,
-			"faces": {
-				"north": {"uv": [0, 0, 4, 4], "texture": "#missing"},
-				"east": {"uv": [0, 0, 4, 4], "texture": "#missing"},
-				"south": {"uv": [0, 0, 4, 4], "texture": "#missing"},
-				"west": {"uv": [0, 0, 4, 4], "texture": "#missing"},
-				"up": {"uv": [0, 0, 4, 4], "texture": "#missing"},
-				"down": {"uv": [0, 0, 4, 4], "texture": "#missing"}
-			}
-		},
-		{
 			"name": "box",
 			"from": [0, -3, 2],
 			"to": [16, 32, 14],
@@ -210,10 +195,10 @@
 					"name": "door",
 					"origin": [-5, 11, 1],
 					"color": 0,
-					"children": [7, 8, 9, 10, 11]
+					"children": [7, 8, 9, 10]
 				},
-				12,
-				13
+				11,
+				12
 			]
 		}
 	]
