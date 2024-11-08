@@ -63,6 +63,24 @@
         "custom_model_data": 10
       },
       "model": "pressure:item/block/deco/terminal"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 11
+      },
+      "model": "pressure:item/block/furniture/wide_drawer_table"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 12
+      },
+      "model": "pressure:item/block/deco/security_camera/base"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 13
+      },
+      "model": "pressure:item/block/deco/security_camera/camera"
     }
   ]
 }
