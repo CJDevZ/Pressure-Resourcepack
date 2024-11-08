@@ -57,6 +57,12 @@
         "custom_model_data": 9
       },
       "model": "pressure:item/block/deco/electrical_box"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10
+      },
+      "model": "pressure:item/block/deco/terminal"
     }
   ]
 }
