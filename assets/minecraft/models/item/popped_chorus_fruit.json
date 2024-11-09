@@ -81,6 +81,18 @@
         "custom_model_data": 13
       },
       "model": "pressure:item/block/deco/security_camera/camera"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 14
+      },
+      "model": "pressure:item/block/deco/vending_machine"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 15
+      },
+      "model": "pressure:item/block/deco/large_tank"
     }
   ]
 }
