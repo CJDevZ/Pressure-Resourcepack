@@ -439,6 +439,12 @@
 			}
 		}
 	],
+	"display": {
+		"head": {
+			"translation": [0, -9.5, 0.125],
+			"scale": [3.4, 3.4, 3.4]
+		}
+	},
 	"groups": [
 		{
 			"name": "cam",
