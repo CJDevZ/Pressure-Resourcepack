@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "builtin/entity",
 	"textures": {
-		"0": "pressure_blue",
-		"1": "gray_concrete",
-		"2": "white_concrete",
+		"0": "pressure:block/pressure_blue",
+		"1": "block/gray_concrete",
+		"2": "block/white_concrete",
 		"particle": "pressure:block/pressure_blue"
 	},
 	"elements": [
