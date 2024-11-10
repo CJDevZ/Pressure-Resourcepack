@@ -6708,7 +6708,7 @@
 		{
 			"from": [2.7, 9.1, -5.9],
 			"to": [7.8, 11.1, -5.7],
-			"rotation": {"angle": 22.5, "axis": "x", "origin": [2.5, 8, 8]},
+			"rotation": {"angle": 0, "axis": "x", "origin": [2.5, 8, 8]},
 			"faces": {
 				"north": {"uv": [0, 0, 16, 16], "texture": "#1"}
 			}
