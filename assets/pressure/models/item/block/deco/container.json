@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "pressure:block/pressure_blue",
-		"1": "block/gray_concrete",
-		"2": "block/white_concrete"
+		"1": "minecraft:block/gray_concrete",
+		"2": "minecraft:block/white_concrete"
 	},
 	"elements": [
 		{
