@@ -1,5 +1,6 @@
 {
+    "parent": "minecraft:item/generated",
     "textures": {
-        "0": "pressure:entity/pandemonium"
+        "layer0": "pressure:entity/pandemonium"
     }
 }
