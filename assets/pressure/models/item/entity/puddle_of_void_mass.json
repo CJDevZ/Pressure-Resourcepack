@@ -1,0 +1,6 @@
+{
+    "parent": "pressure:item/entity/entity",
+    "textures": {
+        "layer0": "pressure:item/entity/puddle_of_void_mass"
+    }
+}
