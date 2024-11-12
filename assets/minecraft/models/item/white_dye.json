@@ -9,6 +9,12 @@
         "custom_model_data": 1
       },
       "model": "pressure:item/entity/pandemonium"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "pressure:item/entity/puddle_of_void_mass"
     }
   ]
 }
