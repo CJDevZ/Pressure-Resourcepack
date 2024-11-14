@@ -105,6 +105,30 @@
         "custom_model_data": 17
       },
       "model": "pressure:item/block/deco/container"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 18
+      },
+      "model": "pressure:item/block/furniture/drawer_table_empty"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 19
+      },
+      "model": "pressure:item/block/furniture/wide_drawer_table_empty"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 20
+      },
+      "model": "pressure:item/block/furniture/drawer"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 21
+      },
+      "model": "pressure:item/block/furniture/wide_drawer"
     }
   ]
 }
