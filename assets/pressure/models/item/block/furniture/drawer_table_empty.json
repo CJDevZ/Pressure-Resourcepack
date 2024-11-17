@@ -126,7 +126,7 @@
 					"name": "Drawer",
 					"origin": [8, 8, 8],
 					"color": 0,
-					"children": [0]
+					"children": []
 				},
 				{
 					"name": "Feet",
