@@ -129,6 +129,12 @@
         "custom_model_data": 21
       },
       "model": "pressure:item/block/furniture/wide_drawer"
+    },
+	{
+      "predicate": {
+        "custom_model_data": 22
+      },
+      "model": "pressure:item/block/furniture/3_drawers_table_empty"
     }
   ]
 }
