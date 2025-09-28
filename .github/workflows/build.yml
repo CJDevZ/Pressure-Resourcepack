@@ -30,12 +30,11 @@ jobs:
       - name: Prepare dist folder
         run: mkdir -p dist
 
-      - name: Zip all files respecting .gitignore
+      - name: Zip resource pack
         run: |
-          # List files for debugging
-          git ls-files
-          # Zip only tracked files (ignores files in .gitignore)
-          git ls-files -z | xargs -0 zip -r dist/pack.zip
+          mkdir -p dist
+          # Use git to list tracked files, ignoring .gitignore, and add other exclusions
+          git ls-files | grep -vE '^\.github/' | zip -@ -r dist/pack.zip
 
       - name: Compute SHA-1
         run: |
