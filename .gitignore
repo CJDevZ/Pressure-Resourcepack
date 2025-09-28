@@ -1,0 +1,9 @@
+# Ignore Git internals
+.git/
+.gitignore   # optional if you want to ignore other .gitignore files (can remove if not desired)
+
+# Ignore GitHub workflow/config files
+.github/
+
+# Optional: ignore the dist folder (where builds/zips go)
+dist/
