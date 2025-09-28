@@ -46,7 +46,9 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           tag: resource-pack
-          artifacts: dist/pack.zip
+          artifacts: |
+            dist/pack.zip
+            dist/pack.sha1
           updateOnlyUnreleased: false
           makeLatest: true
           # optionally include pack.sha1 as additional asset or in release notes
