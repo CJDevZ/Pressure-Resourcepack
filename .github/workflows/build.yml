@@ -48,4 +48,5 @@ jobs:
         with:
           artifacts: dist/pack.zip
           tag: ${{ github.ref_name }}  # or some version tag
+          overwrite: true      # <-- this will replace the release if it exists
           # optionally include pack.sha1 as additional asset or in release notes
