@@ -39,7 +39,7 @@ jobs:
 
       - name: Compute SHA-1
         run: |
-          sha1sum dist/pack.zip | awk '{print $1}' > dist/pack.sha1
+          sha1sum dist/pack.zip | awk '{print $1}' | tr -d '\n' > dist/pack.sha1
 
       - name: Delete existing release
         env:
