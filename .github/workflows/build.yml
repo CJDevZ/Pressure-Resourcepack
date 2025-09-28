@@ -46,7 +46,9 @@ jobs:
       - name: Create GitHub Release (or upload asset)
         uses: ncipollo/release-action@v1
         with:
+          tag: ${{ github.ref_name }}
           artifacts: dist/pack.zip
-          tag: ${{ github.ref_name }}  # or some version tag
-          overwrite: true      # <-- this will replace the release if it exists
+          skipIfReleaseExists: false   # create a new release even if the tag exists
+          makeLatest: true             # mark this release as the latest
+          prerelease: false
           # optionally include pack.sha1 as additional asset or in release notes
