@@ -42,6 +42,17 @@ jobs:
           sha1sum dist/pack.zip > dist/pack.sha1
           # This writes "<sha1>  dist/pack.zip"
 
+      - name: Delete existing release
+        env:
+          TAG_NAME: resource-pack
+        run: |
+          ID=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/tags/$TAG_NAME | jq -r '.id')
+          [ "$ID" != "null" ] && curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/$ID
+
       - name: Update static release
         uses: ncipollo/release-action@v1
         with:
