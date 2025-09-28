@@ -42,7 +42,7 @@ jobs:
           sha1sum dist/pack.zip > dist/pack.sha1
           # This writes "<sha1>  dist/pack.zip"
 
-      - name: Create GitHub Release (or upload asset)
+      - name: Update static release
         uses: ncipollo/release-action@v1
         with:
           tag: resource-pack
@@ -50,5 +50,6 @@ jobs:
             dist/pack.zip
             dist/pack.sha1
           updateOnlyUnreleased: false
+          removeArtifacts: true
           makeLatest: true
           # optionally include pack.sha1 as additional asset or in release notes
