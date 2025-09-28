@@ -34,7 +34,7 @@ jobs:
         run: |
           mkdir -p dist
           # Use git to list tracked files, ignoring .gitignore, and add other exclusions
-          git ls-files | grep -vE '^\.github/' | zip -@ -r dist/pack.zip
+          git ls-files | grep -vE '^\.github/|^\.gitignore$' | zip -@ -r dist/pack.zip
 
       - name: Compute SHA-1
         run: |
