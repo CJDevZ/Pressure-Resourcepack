@@ -45,7 +45,7 @@ jobs:
       - name: Create GitHub Release (or upload asset)
         uses: ncipollo/release-action@v1
         with:
-          tag: ${{ github.ref_name }}
+          tag: resource-pack
           artifacts: dist/pack.zip
           updateOnlyUnreleased: false
           makeLatest: true
