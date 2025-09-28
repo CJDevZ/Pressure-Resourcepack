@@ -7,10 +7,9 @@ permissions:
 
 # Controls when the workflow will run
 on:
-#  # Triggers the workflow on push or pull request events but only for the "main" branch
-#  push:
-#    tags:
-#      - 'v*'
+  push:
+    tags:
+      - 'v*'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -48,7 +47,6 @@ jobs:
         with:
           tag: ${{ github.ref_name }}
           artifacts: dist/pack.zip
-          skipIfReleaseExists: false   # create a new release even if the tag exists
-          makeLatest: true             # mark this release as the latest
-          prerelease: false
+          updateOnlyUnreleased: false   # allows updating published release
+          makeLatest: true
           # optionally include pack.sha1 as additional asset or in release notes
