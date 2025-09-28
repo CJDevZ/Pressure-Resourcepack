@@ -39,8 +39,7 @@ jobs:
 
       - name: Compute SHA-1
         run: |
-          sha1sum dist/pack.zip > dist/pack.sha1
-          # This writes "<sha1>  dist/pack.zip"
+          sha1sum dist/pack.zip | awk '{print $1}' > dist/pack.sha1
 
       - name: Delete existing release
         env:
@@ -53,14 +52,11 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/$ID
 
-      - name: Update static release
+      - name: Create release
         uses: ncipollo/release-action@v1
         with:
           tag: resource-pack
           artifacts: |
             dist/pack.zip
             dist/pack.sha1
-          updateOnlyUnreleased: false
-          removeArtifacts: true
           makeLatest: true
-          # optionally include pack.sha1 as additional asset or in release notes
