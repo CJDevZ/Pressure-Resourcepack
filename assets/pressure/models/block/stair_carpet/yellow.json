@@ -1,5 +1,5 @@
 {
-	"parent": "pressure:item/block/stair_carpet/white",
+	"parent": "pressure:block/stair_carpet/white",
 	"textures": {
 		"layer0": "block/yellow_wool"
 	}

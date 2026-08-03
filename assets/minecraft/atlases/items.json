@@ -1,0 +1,12 @@
+{
+    "sources": [
+        {
+            "type": "single",
+            "resource": "pressure:entity/pandemonium"
+        },
+        {
+            "type": "single",
+            "resource": "pressure:entity/puddle_of_void_mass"
+        }
+    ]
+}

@@ -6,126 +6,6 @@
   "overrides": [
     {
       "predicate": {
-        "custom_model_data": 1
-      },
-      "model": "pressure:item/block/furniture/desk"
-    },
-	  {
-      "predicate": {
-        "custom_model_data": 2
-      },
-      "model": "pressure:item/block/furniture/shelf"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 3
-      },
-      "model": "pressure:item/block/furniture/2_shelves"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 4
-      },
-      "model": "pressure:item/block/deco/barrel"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 5
-      },
-      "model": "pressure:item/block/furniture/bench"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 6
-      },
-      "model": "pressure:item/block/deco/palette"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 7
-      },
-      "model": "pressure:item/block/furniture/drawer_table"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 8
-      },
-      "model": "pressure:item/block/furniture/locker"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 9
-      },
-      "model": "pressure:item/block/deco/electrical_box"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 10
-      },
-      "model": "pressure:item/block/deco/terminal"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 11
-      },
-      "model": "pressure:item/block/furniture/wide_drawer_table"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 12
-      },
-      "model": "pressure:item/block/deco/security_camera/base"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 13
-      },
-      "model": "pressure:item/block/deco/security_camera/camera"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 14
-      },
-      "model": "pressure:item/block/deco/vending_machine"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 15
-      },
-      "model": "pressure:item/block/deco/large_tank"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 16
-      },
-      "model": "pressure:item/block/deco/box"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 17
-      },
-      "model": "pressure:item/block/deco/container"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 18
-      },
-      "model": "pressure:item/block/furniture/drawer_table_empty"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 19
-      },
-      "model": "pressure:item/block/furniture/wide_drawer_table_empty"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 20
-      },
-      "model": "pressure:item/block/furniture/drawer"
-    },
-    {
-      "predicate": {
         "custom_model_data": 21
       },
       "model": "pressure:item/block/furniture/wide_drawer"
@@ -135,6 +15,18 @@
         "custom_model_data": 22
       },
       "model": "pressure:item/block/furniture/3_drawers_table_empty"
+    },
+	{
+      "predicate": {
+        "custom_model_data": 23
+      },
+      "model": "pressure:item/block/game/door_frame"
+    },
+	{
+      "predicate": {
+        "custom_model_data": 24
+      },
+      "model": "pressure:item/block/game/door"
     }
   ]
 }

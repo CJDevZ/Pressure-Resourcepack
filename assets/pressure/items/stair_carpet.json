@@ -1,0 +1,29 @@
+{
+    "model": {
+        "type": "select",
+        "property": "custom_model_data",
+        "cases": [
+            {
+                "when": "black",
+                "model": {"type": "model", "model": "pressure:block/stair_carpet/black"}
+            },
+            {
+                "when": "green",
+                "model": {"type": "model", "model": "pressure:block/stair_carpet/green"}
+            },
+            {
+                "when": "purple",
+                "model": {"type": "model", "model": "pressure:block/stair_carpet/purple"}
+            },
+            {
+                "when": "red",
+                "model": {"type": "model", "model": "pressure:block/stair_carpet/red"}
+            },
+            {
+                "when": "yellow",
+                "model": {"type": "model", "model": "pressure:block/stair_carpet/yellow"}
+            }
+        ],
+        "fallback": {"type": "model", "model": "pressure:block/stair_carpet/white"}
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "pressure:entity",
+    "textures": {
+        "layer0": "pressure:entity/pandemonium"
+    }
+}

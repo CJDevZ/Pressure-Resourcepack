@@ -1,0 +1,13 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "pressure:font/dev.png",
+      "height": 11,
+      "ascent": 0,
+      "chars": [
+        "\uE000"
+      ]
+    }
+  ]
+}

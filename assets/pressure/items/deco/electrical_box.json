@@ -1,0 +1,6 @@
+{
+    "model": {
+        "type": "model",
+        "model": "pressure:block/deco/electrical_box"
+    }
+}
