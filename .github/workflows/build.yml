@@ -1,0 +1,61 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Build & Release Resource Pack
+
+permissions:
+  contents: write
+
+# Controls when the workflow will run
+on:
+  push:
+    tags:
+      - 'v*'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Prepare dist folder
+        run: mkdir -p dist
+
+      - name: Zip resource pack
+        run: |
+          mkdir -p dist
+          # Use git to list tracked files, ignoring .gitignore, and add other exclusions
+          git ls-files | grep -vE '^\.github/|^\.gitignore$' | zip -@ -r dist/pack.zip
+
+      - name: Compute SHA-1
+        run: |
+          sha1sum dist/pack.zip | awk '{print $1}' | tr -d '\n' > dist/pack.sha1
+
+      - name: Delete existing release
+        env:
+          TAG_NAME: resource-pack
+        run: |
+          ID=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/tags/$TAG_NAME | jq -r '.id')
+          [ "$ID" != "null" ] && curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/$ID
+
+      - name: Create release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: resource-pack
+          artifacts: |
+            dist/pack.zip
+            dist/pack.sha1
+          makeLatest: true
